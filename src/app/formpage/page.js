@@ -245,7 +245,7 @@ function FormPage() {
           </button>
           
           <h2 className="field-box-heading">
-            Step 2: Enter Your Name <span className="asterik">*</span>
+          What is your name? <span className="asterik">*</span>
           </h2>
           <div className="field-box-pair">
             <input
@@ -283,7 +283,7 @@ function FormPage() {
             Back
           </button>
           <h2 className="field-box-heading">
-            Step 3: Enter Your Phone Number <span className="asterik">*</span>
+          What is your phone number? <span className="asterik">*</span>
           </h2>
           <div className="field-box-pair">
             <input
@@ -292,6 +292,7 @@ function FormPage() {
               name="phone"
               onChange={formik.handleChange}
               value={formik.values.phone}
+              maxLength={10}
             />
             <button type="submit" className="next-btn">
               {" "}
@@ -321,7 +322,7 @@ function FormPage() {
             Back
           </button>
           <h2 className="field-box-heading">
-            Step 4: Select Your Gender <span className="asterik">*</span>
+          What is your Gender? <span className="asterik">*</span>
           </h2>
           <div className="field-box-pair">
             <select
@@ -359,7 +360,7 @@ function FormPage() {
             Back
           </button>
           <h2 className="field-box-heading">
-            Step 5: Enter Your City <span className="asterik">*</span>
+          What is your City? <span className="asterik">*</span>
           </h2>
           <div className="field-box-pair">
             <input
@@ -398,7 +399,7 @@ function FormPage() {
             Back
           </button>
           <h2 className="field-box-heading">
-            Step 6: Enter Your Age <span className="asterik">*</span>
+          What is your Age? <span className="asterik">*</span>
           </h2>
           <div className="field-box-pair">
             {" "}
@@ -714,12 +715,21 @@ function FormPage() {
           >
             Back
           </button>
-          <div
+          <div className=" flex justify-between">
+            <div
             onClick={clearSignature}
             className="w-[75px] text-center bg-white text-black  py-1 px-2 rounded cursor-pointer"
           >
             Clear
           </div>
+          <div
+            onClick={FinalSubmitFunction}
+            className="w-[100px] py-1 px-3 flex justify-center items-center text-center bg-[#337ab7] text-white rounded text-[22px] cursor-pointer"
+          >
+            Submit
+          </div>
+          </div>
+          
           <div className="space-y-4">
             <div className="border rounded bg-white border-2 border-black w-[630px]">
               <SignaturePad
@@ -743,12 +753,7 @@ function FormPage() {
               />
             </div>
           </div>
-          <div
-            onClick={FinalSubmitFunction}
-            className="w-[100px] py-1 px-3 flex justify-center items-center text-center bg-[#337ab7] text-white rounded text-[22px] cursor-pointer"
-          >
-            Submit
-          </div>
+         
         </div>
       )}
       {
