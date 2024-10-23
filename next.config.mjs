@@ -6,10 +6,7 @@ const nextConfig = {
         EMAIL_PASS:"veod zcpx yehx wmww",
         ADMIN_EMAIL:"robindeep.eminence@gmail.com"
       },
-      output:'export',
-      images: {
-        unoptimized: true
-    },
+      
 };
 
 export default nextConfig;
