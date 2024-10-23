@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+body {
+  background-image: url('/jumperbg.png');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: repeat-y;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI"  ;
+  min-height: 100vh; /* Ensure the root element or app container takes up full height */
+}
+
+*{
+  color: black;
+}
+h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.header{
+  background-color: #337ab7;
+  height: 50px;
+}
+
+.asterik{
+  color: red;
+}
+.error{
+  color: red;
+}
+.child-table {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 20px; */
+  
+}
+
+.child-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+ 
+}
+
+.child-row.header {
+  font-weight: bold;
+}
+
+.child-row input,
+.child-row select {
+  margin: 0 10px;
+}
+.consent-box{
+  border: 2px solid black;
+  background-color: white;
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  overflow-y: auto;
+  padding: 20px;
+  margin-top: -30px;
+}
+.field-box{
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: max-content;
+  margin: auto;
+  row-gap: 8px;
+
+}
+.field-box-pair{
+
+  display: flex;
+  column-gap: 30px;
+}
+.field-box-heading{
+  color: black;
+  font-size: 26px;
+  font-weight: 700;
+}
+.input-field{
+  border: 1px solid #337ab7;
+  /* padding: 5px; */
+  padding: 10px 12px;
+  outline: none;
+  width: 700px;
+  font-size: 20px;
+}
+.next-btn{
+  background-color: #337ab7;
+  /* color: white; */
+ width: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.next-btn:hover{
+  background-color: #2b699e;
+  transition: all;
+  transition-duration: 100ms;
+}
+.back-btn{
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
+.big-btns{
+  background-color: #337ab7;
+  color: white;
+  width: 300px;
+  font-size: 30px;
+  border-radius: 6px;
+}
+.big-btns:hover{
+  background-color: #2b699e;
+  transition: all;
+  transition-duration: 300ms;
+}
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to { 
+      transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to { 
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.load {
+width: 70px;
+height: 70px;
+margin: 110px auto 0;
+border:solid 10px #2b699e;
+border-radius: 50%;
+border-right-color: transparent;
+border-bottom-color: transparent;
+ -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         1.0s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+    
+     transition: all 0.5s ease-in;
+  animation-name:             rotate; 
+  animation-duration:         1.0s; 
+  animation-iteration-count:  infinite;
+  animation-timing-function: linear; 
+}
