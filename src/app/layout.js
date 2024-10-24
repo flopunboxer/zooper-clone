@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {pathname === "/formpage" && <Header />}
-        <div className="flex justify-center items-center  -mt-20">
+        <div className="flex justify-center items-center  -mt-12">
           <Image
             src="/zooperlogo.png" 
             alt="Zooper Logo"
