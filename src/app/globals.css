@@ -13,6 +13,7 @@ body {
   padding: 0;
   font-family: "Segoe UI"  ;
   min-height: 100vh; /* Ensure the root element or app container takes up full height */
+  overflow-x: hidden;
 }
 
 *{
@@ -225,9 +226,9 @@ border-bottom-color: transparent;
  .consent-outer-box{
   flex-direction: column;
  }
- .header{
+ /* .header{
   max-width: 90vw;
- }
+ } */
  .back-btn{
   right: 80px;
  }
