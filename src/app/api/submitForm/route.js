@@ -40,7 +40,7 @@ console.log(formData)
     
      // Email send to user
      const mailOptions = {
-      from: `"Zooper" <${process.env.EMAIL_USER}>`,
+      from: `"YooHoo" <${process.env.EMAIL_USER}>`,
       to: `${formData.email}, ${process.env.ADMIN_EMAIL}`,
       subject: 'Thank You for Your Waiver Form Submission',
       html: emailContent,

@@ -1,5 +1,5 @@
 
-const phoneRegExp = /^(?:\+91|91)?[789]\d{9}$/;
+const phoneRegExp = /^(?:\+91|91)?[56789]\d{9}$/;
 
 import * as yup from 'yup';
 

@@ -236,7 +236,7 @@ function FormPage() {
       {step === 1 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -275,7 +275,7 @@ function FormPage() {
       {step === 2 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -314,7 +314,7 @@ function FormPage() {
       {step === 3 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -324,7 +324,7 @@ function FormPage() {
           <h2 className="field-box-heading">
           What is your Gender? <span className="asterik">*</span>
           </h2>
-          <div className="field-box-pair">
+          <div className="field-box-pair age-select">
             <select
               className="input-field"
               name="gender"
@@ -352,7 +352,7 @@ function FormPage() {
       {step === 4 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -391,7 +391,7 @@ function FormPage() {
       {step === 5 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -436,15 +436,15 @@ function FormPage() {
       {step === 6 && (
         <div className="field-box">
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
           >
             Back
           </button>
-          <h2 className="field-box-heading !text-[30px]">Add a Child?</h2>
-          <div className=" flex gap-x-3 mt-5">
+          <h2 className="field-box-heading !text-[30px]">Add a Child? <span className="asterik">*</span></h2>
+          <div className=" flex gap-x-3 mt-5 child-buttons-div">
             <button
               className="big-btns"
               onClick={() => {
@@ -469,7 +469,7 @@ function FormPage() {
       {step === 7 && (
         <div>
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -630,9 +630,9 @@ function FormPage() {
       )}
       {step == 8 && (
         <div className=" flex flex-col items-center ">
-          <div className="flex justify-center ">
+          <div className="flex justify-center consent-outer-box ">
             <button
-              className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+              className="back-btn  absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
               onClick={() => {
                 setStep((prev) => {
                   if (isChild) {
@@ -645,10 +645,10 @@ function FormPage() {
             >
               Back
             </button>
-            <div className=" flex flex-col gap-y-3">
+            <div className="  flex flex-col gap-y-3">
               <Consentform></Consentform>
-              <div className=" flex flex-col">
-                <div
+              <div className=" flex flex-col consents-div">
+                <div className="consent1"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -673,7 +673,7 @@ function FormPage() {
                   </label>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center" }}>
+                <div className="consent2" style={{ display: "flex", alignItems: "center" }}>
                   <input
                     style={{ cursor: "pointer" }}
                     type="checkbox"
@@ -708,7 +708,7 @@ function FormPage() {
         <div className="field-box">
           {" "}
           <button
-            className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+            className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
             onClick={() => {
               setStep((prev) => prev - 1);
             }}
@@ -759,7 +759,7 @@ function FormPage() {
       {
         step=='waiver' &&<>
         <button
-              className=" absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
+              className="back-btn absolute right-[50px] top-0 mt-2 ml-5 mb-2 bg-white rounded-md py-1 px-7 text-[20px]"
               onClick={() => {
                setStep(0)
               }}

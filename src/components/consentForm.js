@@ -4,7 +4,7 @@ function Consentform() {
   return (
     <div className="consent-box">
       <div className="font-bold mb-3 italic text-[25px]">
-        ZOOPER: The Trampoline Park (A Unit of Cosmic Exim)
+        YooHoo: The Trampoline Park (A Unit of Cosmic Exim)
       </div>
       <div className="text-[20px]">
         <div>
@@ -14,7 +14,7 @@ function Consentform() {
           Everyone who signs on the Waiver Form must submit his/her Age Proof
           ID. If the participant is under the age of 18, a parent or legal
           guardian must sign the waiver for them and submit their Age Proof ID.
-          Zooper: The Trampoline Park entails certain risks that simply cannot
+          YooHoo: The Trampoline Park entails certain risks that simply cannot
           be eliminated without jeopardizing the park&apos;s overall experience
           and essential qualities of its activities. Risks include the
           negligence of other participants or yourself, injuries including rope
@@ -27,7 +27,7 @@ function Consentform() {
           bouncing, more than one person per trampoline can create a rebound
           effect causing serious injury. In any event, if you or your child is
           injured, you or your child may require medical assistance, at your own
-          expense. Furthermore, Zooper employees have extremely difficult and
+          expense. Furthermore, YooHoo employees have extremely difficult and
           high-risk jobs to perform. They seek safety but they are not
           infallible, they might be unaware of a participant&apos;s health
           issues or abilities. They may give incomplete warnings or instructions
@@ -65,12 +65,12 @@ function Consentform() {
           interests and avoid social media communications that might be
           misconstrued in a way that could damage the company&apos;s goodwill
           and business reputation, even indirectly. In connection with my
-          child&apos;s use of the Zooper: The Trampoline Park, I consent to the
+          child&apos;s use of the YooHoo: The Trampoline Park, I consent to the
           recording of the child&apos;s and my physical likeness and/or voice
           through photographic, technical, digital, electronic or other means. I
           hereby consent to and authorize Cosmic Exim and its agents to use such
           recordings, as well as the child&apos;s name and my name, for any
-          purpose, including advertising, promoting, and publicizing Zooper: The
+          purpose, including advertising, promoting, and publicizing YooHoo: The
           Trampoline Park. I waive any and all claims I may have in connection
           with the recordings.
         </div>

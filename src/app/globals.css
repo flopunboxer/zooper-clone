@@ -168,3 +168,70 @@ border-bottom-color: transparent;
   animation-iteration-count:  infinite;
   animation-timing-function: linear; 
 }
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 550px) {
+  .section1{
+    max-width: 90vw;
+    /* background-color: yellow; */
+   
+  }
+  .section1 >h1{
+    font-size: 30px;
+  }
+  .field-box{
+    align-items: start;
+    margin: unset;
+    padding-left: 4%;
+    max-width: 90vw;
+  }
+  .field-box-heading{
+    font-size: 28px;
+  }
+  .field-box-pair{
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: max-content;
+  }
+  .field-box input{
+    width: 80vw
+  }
+  .field-box button{
+    border-radius: 10px;
+    padding: 7px 10px;
+  }
+  .load{
+    left: 40%;
+  }
+  .input-field{
+    max-width: 90vw;
+  }
+ .child-buttons-div{
+  flex-direction: column;
+  row-gap: 10px;
+ }
+ .big-btns{
+  width: 120px;
+ }
+ .consent-box{
+  max-width: 70vw;
+ }
+ .consents-div{
+  max-width: 90vw;
+ }
+ .consent1,.consent2{
+  max-width: 90vw;
+ }
+ .consent-outer-box{
+  flex-direction: column;
+ }
+ .header{
+  max-width: 90vw;
+ }
+ .back-btn{
+  right: 80px;
+ }
+ body{
+  overflow-x: hidden;
+ }
+}
