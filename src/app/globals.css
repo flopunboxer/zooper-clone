@@ -14,6 +14,7 @@ body {
   font-family: "Segoe UI"  ;
   min-height: 100vh; /* Ensure the root element or app container takes up full height */
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 *{
