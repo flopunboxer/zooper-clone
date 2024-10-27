@@ -4,7 +4,7 @@ function Consentform() {
   return (
     <div className="consent-box">
       <div className="font-bold mb-3 italic text-[25px]">
-        YooHoo: The Trampoline Park (A Unit of Cosmic Exim)
+        YooHoo: The Trampoline Park
       </div>
       <div className="text-[20px]">
         <div>
