@@ -231,6 +231,8 @@ border-bottom-color: transparent;
  } */
  .back-btn{
   right: 10%;
+  height: 38px;
+ 
  }
  /* body{
   overflow-x: hidden;
