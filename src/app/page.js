@@ -15,7 +15,7 @@ export default function Home() {
     </div>
     {/* part 2 */}
     <div>
-      <button onClick={()=>{router.push("/formpage")}} className=" w-[300px] bg-[#0096FF] text-white font-bold  text-[28px] py-2 rounded-lg hover:bg-[#0d6efd] transition-all duration-200 sm:w-[600px]">Click Here to Start</button>
+      <button onClick={()=>{router.push("/waiver-form")}} className=" w-[300px] bg-[#0096FF] text-white font-bold  text-[28px] py-2 rounded-lg hover:bg-[#0d6efd] transition-all duration-200 sm:w-[600px]">Click Here to Start</button>
     </div>
  </div>
  </>
